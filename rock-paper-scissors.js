@@ -1,24 +1,24 @@
 
 const promt = require('promt-sync')({sigint: true});
 
-let player1 = prompt("choose rock, paper, or scissors:")
-let player2 = prompt("choose rock, paper, or scissors:")
+let Player1 = prompt("choose rock, paper, or scissors:")
+let Player2 = prompt("choose rock, paper, or scissors:")
 
-if ((player1 === "rock" ||player1 === "paper" || player1 === "scissors")) && ((player2 === "rock" ||player2 === "paper" || player2 === "scissors")) {
+if ((Player1 === "rock" ||Player1 === "paper" || Player1 === "scissors")) && ((Player2 === "rock" ||Player2 === "paper" || Player2 === "scissors")) {
     if (player1 === player2) {
 console.log('draw');
-    } else if (player1 === "rock" && player2 === "scissors"){
+    } else if (Player1 === "rock" && Player2 === "scissors"){
     console.log("player 1  wins");
-} else if (player1 === "paper" && player2 === "rock"){
+} else if (Player1 === "paper" && Player2 === "rock"){
     console.log("player 1  wins");
-} else if (player1 === "scissors" && player2 === "paper"){
+} else if (Player1 === "scissors" && Player2 === "paper"){
     console.log("player 1  wins");
-} else if (player2 === "paper" && player1 === "rock"){
+} else if (Player2 === "paper" && Player1 === "rock"){
     console.log("player 2  wins");
-} else if (player2 === "scissors" && player1 === "paper"){
+} else if (Player2 === "scissors" && Player1 === "paper"){
     console.log("player 2  wins");
-} else if (player1 === "paper" && player1 === "rock"){
-    console.log("player 2  wins");
+} else if (Player1 === "paper" && Player1 === "rock"){
+    console.log("Player 2  wins");
 }
 } else {
     console.log("errors invalid entry")
